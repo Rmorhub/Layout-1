@@ -1,0 +1,95 @@
+.features {
+  display: flex;
+  position: relative;
+
+  @include for-large-down {
+    display: none;
+  }
+
+  @include for-large-up {
+    margin-bottom: 49px;
+  }
+
+  &__content {
+    display: flex;
+    margin: auto;
+    width: 1140px;
+  }
+
+  &__column {
+    width: 459px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    line-height: 34px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $text-color-green;
+  }
+
+  &__title {
+    margin-top: 24px;
+    margin-bottom: 0;
+    line-height: 56px;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  &_descriptions {
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 34px;
+    font-size: 24px;
+  }
+
+  &__advantage-header {
+    display: flex;
+    margin-top: 42px;
+    line-height: 42px;
+  }
+
+  &__avantage-title {
+    margin: 0;
+    margin-left: 15px;
+    line-height: 26px;
+    font-weight: 700px;
+    font-size: 22px;
+    color: $text-color-blue;
+  }
+
+  &__advantage-description {
+    margin-top: 8;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    line-height: 26px;
+    font-size: 18px;
+    border-bottom: 3px solid $border-color-blue;
+  }
+
+  &__advantage-item {
+    display: flex;
+    margin-top: 21px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid $border-color-light-black;
+  }
+
+  &__advantage-item-text {
+    margin-left: 15px;
+    line-height: 26px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__left-decoration {
+    position: absolute;
+    top: 258px;
+    height: 166px;
+  }
+
+  &__banner {
+    position: absolute;
+    right: 0;
+  }
+}
